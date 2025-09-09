@@ -1,0 +1,8 @@
+.loja {
+    background-color: rgb(187, 223, 219);
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: right; 
+    border-radius: 8px;
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blue Lock — Portal da Obra</title>
+  <meta name="description" content="Site fã / guia completo da obra japonesa Blue Lock: sinopse, personagens, capítulos, galeria, linha do tempo e curiosidades." />
+  <style>
+    /* ====== Reset & Base ====== */
+    :root{
+      --bg:#0b1020; --card:#0f1724; --accent:#ff3b3b; --muted:#9aa4b2; --glass: rgba(255,255,255,0.03);
+      --maxw:1100px; --radius:14px; --gap:18px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg, #061123 0%, #071426 60%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;padding:24px 12px;
+    }
+    a{color:var(--accent);text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--maxw);margin:0 auto;padding:18px}
+
+    /* ====== Header ====== */
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#ff3b3b,#ff8a00);display:flex;align-items:center;justify-content:center;font-weight:800;color:#071426}
+    .brand h1{font-size:20px}
+    nav{display:flex;gap:10px;align-items:center}
+    nav a{padding:8px 12px;border-radius:10px;background:transparent;color:var(--muted);font-weight:600}
+    nav a.active, nav a:hover{background:var(--glass);color:#fff}
+
+    /* ====== Hero ====== */
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:center;margin-bottom:20px}
+    .hero .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:20px;border-radius:var(--radius);box-shadow:0 6px 24px rgba(3,8,16,0.6)}
+    .hero h2{font-size:26px;margin-bottom:6px}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:10px}
+    .cta{display:flex;gap:10px;margin-top:12px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;border:none;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+
+    /* ====== Grid Sections ====== */
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:var(--gap)}
+    aside{position:sticky;top:24px}
+    section.card{background:var(--card);border-radius:12px;padding:18px}
+
+    /* ====== Characters list ====== */
+    .char-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .char{display:flex;gap:10px;align-items:center;padding:10px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);cursor:pointer}
+    .char img{width:64px;height:64px;border-radius:8px;object-fit:cover}
+    .char h4{font-size:15px}
+    .char p{font-size:13px;color:var(--muted)}
+
+    /* ====== Gallery ====== */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .gallery img{height:120px;object-fit:cover;border-radius:8px}
+
+    /* ====== Modal ====== */
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,12,0.6);padding:24px}
+    .modal.show{display:flex}
+    .modal .panel{background:linear-gradient(180deg,#071426,#0b1020);padding:20px;border-radius:12px;max-width:880px;width:100%;box-shadow:0 10px 40px rgba(2,6,12,0.8)}
+    .modal .panel .close{float:right;background:transparent;border:0;color:var(--muted);font-weight:800;cursor:pointer}
+
+    /* ====== Chapter list ====== */
+    .chap-list{display:flex;flex-direction:column;gap:8px}
+    .chap{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);display:flex;justify-content:space-between;align-items:center}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* ====== Footer ====== */
+    footer{margin-top:26px;text-align:center;color:var(--muted)}
+
+    /* ====== Responsive ====== */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .char-list{grid-template-columns:1fr}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">BL</div>
+        <div>
+          <h1>Blue Lock — Portal</h1>
+          <div class="small">Guia completo da obra | mangá / anime</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home" class="active">Início</a>
+        <a href="#sinopse">Sinopse</a>
+        <a href="#personagens">Personagens</a>
+        <a href="#capitulos">Capítulos</a>
+        <a href="#galeria">Galeria</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="card">
+          <h2>Blue Lock — O Projeto que irá criar o maior atacante do mundo</h2>
+          <div class="meta">Mangá: Muneyuki Kaneshiro (texto) • Ilustrações: Yusuke Nomura • Gênero: Esporte, Shounen</div>
+          <p>Blue Lock é uma obra que mistura intensidade psicológica e partidas de futebol de alto risco, centrada em um programa secreto para criar o atacante definitivo para a seleção japonesa. Este site reúne sinopse, perfis, análises de personagens, cronologia, galeria e curiosidades.</p>
+
+          <div class="cta">
+            <button class="btn" onclick="scrollToSection('personagens')">Explorar Personagens</button>
+            <button class="btn ghost" onclick="openModal('about')">Mais sobre a obra</button>
+          </div>
+
+          <hr style="margin:14px 0;border:0;border-top:1px solid rgba(255,255,255,0.03)">
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <div class="small">Status: Mangá em publicação</div>
+            <div class="small">Adaptação: Anime</div>
+            <div class="small">Temas: Competição, Ego, Trabalho em equipe (de forma subversiva)</div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3>Ficha rápida</h3>
+            <div class="small">Autor: Muneyuki Kaneshiro</div>
+            <div class="small">Ilustrador: Yusuke Nomura</div>
+            <div class="small">Primeira publicação: 2018</div>
+            <div style="margin-top:10px">
+              <button class="btn" onclick="scrollToSection('capitulos')">Lista de capítulos</button>
+            </div>
+          </div>
+
+          <div style="height:12px"></div>
+
+          <div class="card">
+            <h3>Personagens em destaque</h3>
+            <div class="char-list" id="char-list"></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid">
+        <div>
+          <section id="sinopse" class="card" style="margin-bottom:var(--gap)">
+            <h3>Sinopse</h3>
+            <p style="margin-top:10px">Após a eliminação do Japão na Copa do Mundo, a Federação cria o projeto Blue Lock: isolar 300 atacantes jovens em uma instalação especial e submetê-los a um treinamento brutal no qual apenas um poderá emergir como o atacante absoluto. Isagi Yoichi, um atacante de escola média com dúvidas sobre seu estilo, entra no projeto e precisa confrontar seus próprios limites, ego e a importância da individualidade no futebol.</p>
+
+            <h4 style="margin-top:12px">Temas centrais</h4>
+            <ul style="margin-top:8px;color:var(--muted)">
+              <li>Competição extrema e sobrevivência psicológica</li>
+              <li>Conflito entre talento individual e trabalho coletivo</li>
+              <li>Estratégia, visão e instinto na posição de atacante</li>
+            </ul>
+          </section>
+
+          <section id="personagens" class="card" style="margin-bottom:var(--gap)">
+            <h3>Personagens</h3>
+            <p class="small" style="margin-bottom:10px">Clique em um personagem para ver informações detalhadas.</p>
+            <div id="characters" class="char-list"></div>
+          </section>
+
+          <section id="capitulos" class="card" style="margin-bottom:var(--gap)">
+            <h3>Capítulos e Arcos</h3>
+            <p class="small">Resumo dos arcos mais importantes e capítulos chave (resumos breves).</p>
+            <div class="chap-list" id="chap-list"></div>
+          </section>
+
+          <section id="galeria" class="card" style="margin-bottom:var(--gap)">
+            <h3>Galeria</h3>
+            <p class="small">Imagens ilustrativas — use as imagens para inspiração. (Substitua por imagens oficiais se necessário).</p>
+            <div class="gallery" id="gallery"></div>
+          </section>
+
+          <section id="curiosidades" class="card" style="margin-bottom:var(--gap)">
+            <h3>Curiosidades & Trivia</h3>
+            <ul style="margin-top:8px;color:var(--muted)">
+              <li>Blue Lock ganhou popularidade por apresentar futebol com estética quase psicológica e personagens anti-heroicos.</li>
+              <li>O design dos dribles e posicionamento no mangá enfatiza visão espacial e decisão instantânea.</li>
+              <li>O contraste entre equipe e indivíduo é explorado de forma única: a obra questiona se o maior atacante deve ser um lobo solitário.</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <aside>
+          <section class="card">
+            <h3>Busca rápida</h3>
+            <input id="search" placeholder="Pesquisar personagem / capítulo" style="width:100%;padding:10px;border-radius:8px;border:none;background:rgba(255,255,255,0.02);color:inherit;margin-top:8px" oninput="quickSearch(this.value)">
+            <div style="height:12px"></div>
+
+            <h4>Resumo de arcos</h4>
+            <div class="small">- Fase de seleção
+- Jogos de equipe
+- Matches eliminatórios
+- Torneios finais</div>
+
+            <div style="height:12px"></div>
+            <h4>Recursos externos</h4>
+            <div class="small">Consulte o mangá, o anime e wikis dedicadas para informações atualizadas e capas originais.</div>
+          </section>
+
+          <section class="card" style="margin-top:var(--gap)">
+            <h3>Sobre este site</h3>
+            <p class="small">Criado como um guia de fã — todo o conteúdo aqui é para fins informativos e de estudo sobre a obra.</p>
+            <div style="margin-top:10px">
+              <button class="btn ghost" onclick="openModal('credits')">Créditos</button>
+            </div>
+          </section>
+        </aside>
+      </section>
+
+      <footer>
+        <div class="small">Este site não é oficial. Direitos da obra a seus respectivos detentores.</div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Modal (info dinâmico) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="panel" role="dialog" aria-modal="true">
+      <button class="close" onclick="closeModal()">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script>
+    /* ====== Dados (exemplos) ====== */
+    const charactersData = [
+      {id:1,name:'Yoichi Isagi',role:'Atacante',bio:'Protagonista com grande visão de jogo; aprende a transformar tomadas de decisão em vantagem.',img:'https://i.imgur.com/3ZQZ3Qy.jpg'},
+      {id:2,name:'Bachira Meguru',role:'Atacante / Criador de jogadas',bio:'Excêntrico, tem senso de jogo imprevisível e grande habilidade na finalização.',img:'https://i.imgur.com/4d1mQ2D.jpg'},
+      {id:3,name:'Rensuke Kunigami',role:'Atacante',bio:'Forte e determinado, tem ética clássica de atacante que valoriza finalização.',img:'https://i.imgur.com/7vYbq2Z.jpg'},
+      {id:4,name:'Hyoma Chigiri',role:'Atacante veloz',bio:'Velocidade impressionante; luta com lesões e dúvidas.',img:'https://i.imgur.com/gpY9n5j.jpg'}
+    ];
+
+    const chaptersData = [
+      {num:1,title:'Início do Projeto Blue Lock',arc:'Seleção',summary:'Jogadores são reunidos e a dinâmica competitiva inicial é apresentada.'},
+      {num:6,title:'Partidas em equipe',arc:'Treinos e jogos',summary:'Jogos com regras especiais que testam individualidade vs equipe.'},
+      {num:20,title:'Torneios eliminatórios',arc:'Competição',summary:'Etapas decisivas para reduzir o número de participantes.'}
+    ];
+
+    const galleryImgs = [
+      'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=60',
+      'https://images.unsplash.com/photo-1520975914430-85a5e1f3a0b5?auto=format&fit=crop&w=800&q=60',
+      'https://images.unsplash.com/photo-1508606572321-901ea443707f?auto=format&fit=crop&w=800&q=60',
+      'https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=800&q=60',
+      'https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=60',
+      'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=800&q=60'
+    ];
+
+    /* ====== Inicialização dinâmica ====== */
+    function renderCharacters(){
+      const list = document.getElementById('characters');
+      const side = document.getElementById('char-list');
+      list.innerHTML = '';
+      side.innerHTML = '';
+      charactersData.forEach(c=>{
+        const el = document.createElement('div'); el.className='char'; el.onclick = () => openCharacter(c.id);
+        el.innerHTML = `<img src="${c.img}" alt="${c.name}"><div><h4>${c.name}</h4><p class='small'>${c.role}</p></div>`;
+        list.appendChild(el);
+
+        const el2 = document.createElement('div'); el2.className='char'; el2.onclick = () => openCharacter(c.id);
+        el2.innerHTML = `<img src="${c.img}" alt="${c.name}"><div><h4>${c.name}</h4><p class='small'>${c.role}</p></div>`;
+        side.appendChild(el2);
+      })
+    }
+
+    function renderChapters(){
+      const el = document.getElementById('chap-list'); el.innerHTML='';
+      chaptersData.forEach(ch=>{
+        const d = document.createElement('div'); d.className='chap';
+        d.innerHTML = `<div><strong>Capítulo ${ch.num} — ${ch.title}</strong><div class='small'>Arco: ${ch.arc}</div></div><div class='small'>${ch.summary}</div>`;
+        el.appendChild(d);
+      })
+    }
+
+    function renderGallery(){
+      const el = document.getElementById('gallery'); el.innerHTML='';
+      galleryImgs.forEach(src => {
+        const i = document.createElement('img'); i.src = src; i.alt = 'Imagem da galeria';
+        el.appendChild(i);
+      })
+    }
+
+    /* ====== Interações ====== */
+    function openCharacter(id){
+      const c = charactersData.find(x=>x.id===id);
+      if(!c) return;
+      const html = `<div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap"><div style="flex:1 1 220px"><img src='${c.img}' alt='${c.name}' style='border-radius:8px;max-width:320px'></div><div style='flex:2 1 360px'><h2>${c.name}</h2><div class='small'>${c.role}</div><p style='margin-top:10px;color:var(--muted)'>${c.bio}</p><div style='margin-top:12px'><button class='btn' onclick='closeModal()'>Fechar</button></div></div></div>`;
+      openModalContent(html);
+    }
+
+    function openModalContent(html){
+      document.getElementById('modal-content').innerHTML = html;
+      openModal();
+    }
+
+    function openModal(type){
+      const modal = document.getElementById('modal');
+      modal.classList.add('show'); modal.setAttribute('aria-hidden','false');
+      if(type==='about'){
+        openModalContent(`<h2>Sobre Blue Lock</h2><p class='small'>Blue Lock é conhecido por combinar emoção esportiva com drama psicológico; explore os perfis e o conceito no site.</p>`)
+      } else if(type==='credits'){
+        openModalContent(`<h2>Créditos</h2><p class='small'>Conteúdo criado como guia de fã. Imagens de exemplo via Unsplash/Imgur. Direitos autorais pertencem aos criadores originais.</p>`)
+      }
+    }
+    function closeModal(){
+      const modal = document.getElementById('modal');
+      modal.classList.remove('show'); modal.setAttribute('aria-hidden','true');
+    }
+
+    // small helpers
+    function scrollToSection(id){
+      document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    function quickSearch(q){
+      q = q.trim().toLowerCase();
+      if(!q){renderCharacters();renderChapters();return}
+      // characters
+      const chars = charactersData.filter(c=> (c.name+c.role+c.bio).toLowerCase().includes(q));
+      const list = document.getElementById('characters'); list.innerHTML='';
+      chars.forEach(c=>{const el = document.createElement('div');el.className='char';el.onclick=()=>openCharacter(c.id);el.innerHTML=`<img src="${c.img}" alt="${c.name}"><div><h4>${c.name}</h4><p class='small'>${c.role}</p></div>`;list.appendChild(el)})
+      // chapters
+      const chapList = document.getElementById('chap-list'); chapList.innerHTML='';
+      const chs = chaptersData.filter(ch=> (ch.title+ch.summary+ch.arc).toLowerCase().includes(q));
+      chs.forEach(ch=>{const d=document.createElement('div');d.className='chap';d.innerHTML=`<div><strong>Cap ${ch.num} — ${ch.title}</strong><div class='small'>Arco: ${ch.arc}</div></div><div class='small'>${ch.summary}</div>`;chapList.appendChild(d)})
+    }
+
+    // click outside to close modal
+    document.getElementById('modal').addEventListener('click', (e)=>{ if(e.target.id==='modal') closeModal() })
+
+    // keyboard support
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal() })
+
+    // init
+    renderCharacters(); renderChapters(); renderGallery();
+  </script>
+
+</body>
+</html>

@@ -4,20 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teoria</title>
-<!--UTILIZANDO CSS INTERNO-->
-    <style>
-        body{
-            background-color: aqua;
-            
-        }
-        h1{
-            color: black;
-        }
-        p{
-            font-size: xx-large;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
+
 <body>
     <!--titulos de nivel 1 ate nivel 6-->
 <h1> Cabeçalho de nivel 1 </h1>
@@ -35,23 +25,23 @@
  <hr>
 
  <!--tag br quebra a linha-->
- <p>  Este e um texto grande,</br>
+ <p>  Este e um texto grande,<br>
       que desejo quebra a <br>
      linha</p>
 
      <!--inserindo u link para abrir outra pagina-->
-     <a href= "https://www.sesisp.org.br">Sesi</a>
+     <a href="https://www.sesisp.org.br">Sesi</a>
 <p><a href="https://www.sp.senai.br/" target="_blank">Senai</a></p>
 
 <!--adicionando imagens-->
 
 <img src="https://static.wikia.nocookie.net/animeverso/images/8/8a/KaiserRender.png/revision/latest?cb=20241216165227&path-prefix=pt-br">
-     <img src="./img/kaiser.png" alt="Michael blue-lock-kaiser" tittle="Kaiser da thiciane">
+<img src="./img/kaiser.png" alt="Michael blue-lock-kaiser" title="Kaiser da thiciane">
 
 <p>Paragrafo com caractere &lt;a&gt; </p>
 <!-- Para inserir emoji use o hexadecimal do site -->
  <!-- emojipedia e o codigo vai depois do &#x-->
-<p> Inserindo emoji &#x1F60A &#x2764"</p>
+<p> Inserindo emoji &#x1F60A &#x2764</p>
 
 <!--- Tags para formataçao e enfatizaçao do texto -->
 <b> texto em negrito </b><br>
@@ -63,7 +53,7 @@
 <del> texto excluido </del>
 <ins> texto inserido </ins>
 <p>4<sub>2</sub></p>
-<p>3<sub> 3</sub></p>
+<p>3<sub>3</sub></p>
 <u> Texto sublinado </u>
 
 listas oedenais 
@@ -75,52 +65,47 @@ listas oedenais
     <li>tomar café</li>
     <li>Escovar os dentes</li>
     <li>ir para a escola, no horario</li>
+</ol>
 
-
-    
 listas ordenadas  com numeros  romananos  em minusculo
 
 <ol type="i">
-    
     <li>Acordar</li>
     <li>Tomar Banho</li>
     <li>Colocar uniforme</li>
     <li>tomar café</li>
     <li>Escovar os dentes</li>
     <li>ir para a escola, no horario</li>
+</ol>
 
-    
 listas ordenadas  com numeros  romananos  em maisculo
    
 <ol type="I">
-    
     <li>Acordar</li>
     <li>Tomar Banho</li>
     <li>Colocar uniforme</li>
     <li>tomar café</li>
     <li>Escovar os dentes</li>
     <li>ir para a escola, no horario</li>
+</ol>
 
-
-    listas ordenadas  com letras   em maisculo
+listas ordenadas  com letras   em maisculo
    
-    <ol type="A">
-    
+<ol type="A">
     <li>Acordar</li>
     <li>Tomar Banho</li>
     <li>Colocar uniforme</li>
     <li>tomar café</li>
     <li>Escovar os dentes</li>
     <li>ir para a escola, no horario</li>
+</ol>
 
 Listas nao ordenadas
-
 
 <ul>
 <li>carvao</li>
 <li>carne</li>
 <li> bebidas </li>
-
 </ul>
     
 lista dentro de lista
@@ -140,7 +125,7 @@ trabaçhando com tabelas.
 <!--criando uma nova tabela-->
 <table border="1">
    <!--criando uma nova linha-->
-</tr>
+<tr>
 <!--th insere uma celula de cabecalho-->
 <th>nome</th>
 <th>idade</th>
@@ -152,32 +137,45 @@ trabaçhando com tabelas.
     <td>thiciane</td>
     <td>16</td>
     <td>aluno</td>
-
-
-
-
 </tr>
 </table>
 
 Tabelas mesclacadas
- </tr>
-</table>
-    Tabela Mesclada
-    <table border="1">
-        <thead>
+
+Tabela Mesclada
+<table border="1">
+    <thead>
+        <tr>
             <th>Nome</th>
             <th>Telefone</th>
-        </thead>
-        <tbody>
-            <td rowspan="2" >thiciane linda</td>
-            <td> 297-53988</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">thiciane linda</td>
+            <td>297-53988</td>
         </tr>
         <tr></tr>
-        </tbody>
-    </table>
+    </tbody>
+</table>
+
 <p style="background-color: rgb(169, 202, 204); font-size: x-large;color:rgb(248, 251, 253)">Css inline</p>
+<h5 class="titulo">trabalhando com CSS</h5>
+<p>visualizando o funcionamneto da margem</p>
+<img class= "imagem" src="./img/kaiser.png" alt="">
+
+<h4> criando nosso  formulario</h4>
+<form class="formulario">
+    <label>nome</label>
+    <!--inserir um campo texto digitavel-->
+    <input type="text" class="input-nome"><br>
+    <!--tipo senha-->
+       <label>senha</label>
+    <input class="input-nome" placeholder="Digite uma senha" type="password"><br>
+    <input href="#" type="button" class="botao" value="entrar">
+
+</form>
 
 </body>
-
-
 </html>
+
