@@ -6,3 +6,28 @@
     text-align: right; 
     border-radius: 8px;
 }
+
+.login{
+        background-color: darkgray;
+    width: 400px;
+    margin: 0 auto;
+      
+    text-align: center;
+}
+
+.cadastro{
+   
+     background-color: darkgray;
+    width: 400px;
+    margin: 0 auto;
+      
+    text-align: center;
+}
+
+.produto{
+    background-color: darkgray;
+    width: 400px;
+    margin: 0 auto;
+      
+    text-align: center;
+}

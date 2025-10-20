@@ -1,79 +1,188 @@
-/* Seletor Universal */
- * {
-    
-    /* Zera a margem do documento */
-    margin: 0;
-    /* Gera um espaçamento interno */
+
+* {
+
     padding: 0;
-    
+    box-sizing: border-box; 
+}
 
-    
- }
 
-/* Seleletor de tipo, aplica o css em tag*/
-h5{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h5 {
     color: blueviolet;
 }
 
-/* Seletor de classe */
-.titulo{
+
+
+.index-container {
+    display: flex;
+ 
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+    justify-content: center; 
+}
+
+.card-conteudo {
+    width: 250px; 
+    min-height: 200px; 
+    border: 1px solid rgb(109, 146, 158);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(112, 141, 173, 0.4); 
+    transition: transform 0.3s ease;
+    display: flex; 
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-conteudo:hover {
+    transform: scale(1.05); 
+}
+
+.card-cabecalho {
+    padding: 10px;
+    background-color: #f0f4f7; 
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.card-cabecalho h2 {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.card-corpo {
+    padding: 15px;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px; 
+}
+
+.card-corpo img {
+   
+    max-width: 100%;
+    min-height: 50px; 
+    width: 100px; 
+    background-color: #eee; 
+    border: 1px dashed #ccc; 
+    display: block;
+    margin-bottom: 5px; 
+}
+
+
+.card-rodape {
+    background-color: #e9e9e9;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.card-botao {
+    text-decoration: none;
+    color: #333;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: inline-block; 
+    transition: background-color 0.3s ease;
+}
+
+.card-botao:hover {
+    background-color: #d8c2aa; 
+    color: #111;
+}
+
+
+.titulo {
     background-color: chocolate;
-    /* aplica margem em todas as laterais*/
-    /*margin: 10px;*/
-    /*margin-left: 20px; */
-    /*aplico o espaçamento no superior e inferior*/
-    /* e aplico  tabem nas laterais esuqerda e direita*/
-    /*margin: 20px 0px*/
-    margin: 0 0px 0;
-    /*aplicando espaçamento interno*/
-    /* padding: 10px*/
+    margin: 0 0 0;
     padding: 0 10px;
-
-
 }
 
-p{
-    background-color: brown;
-}
 
-.imagem{
-    /*aplicando tamanho em largura*/
-    width: 100px;
-    /*aplicando tamanho em altura*/
-    height: 200px;
-
-}
-
-.formulario{
+.formulario {
     background-color: darkgray;
     width: 400px;
-    margin: 0 auto;
-      
+    margin: 20px auto;
+    padding: 15px;
     text-align: center;
-    
+    border-radius: 5px;
 }
 
-.input-nome{
-    /*remover as bordas*/
+.input-nome, .email {
+
     border: none;
-    /*aplica curvatura no canto das bordas*/
-    border-radius: 2px;
-    margin-left: 10px;
-    /* definir opacidade no campo texto*/
-    opacity: 70%;
-
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px 0;
+    opacity: 90%;
+    width: calc(100% - 20px);
 }
 
+.email {
+    border: 2px solid white;
+}
 
-.botao{
+.botao {
     background-color: antiquewhite;
     border: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 8px 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
-    /*aplicando sombra no texto posiçao x, y, blur*/
-    text-shadow: 5px 2px 5px rgba(212, 14, 57, 0.9);
-   
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    cursor: pointer;
+    margin-top: 10px;
+}
 
+.checar, .radio {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #acaf50;
+    vertical-align: middle;
+}
+
+.checar:checked {
+    background-color: #acaf50;
+}
+
+.radio {
+    border: 2px solid #d3421d;
+    border-radius: 50%;
+}
+
+.radio:checked {
+    background-color: #d3421d;
+    border-color: #50d31d;
+}
+
+.selecao {
+    appearance: none;
+    width: 100%;
+    padding: 4px;
+    font-size: 16px;
+    color: #4a3f3f;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
 }

@@ -4,28 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro</title>
-<link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
   <div class="cadastro">
     <h4>Cadastro de Usuário</h4>
     
-    <form action="#" method="post">
+    <form value="" method="post">
+
+ 
+      <label type="nome">Nome Completo</label><br>
+      <input type="text" id="nome" name="nome" class="input-nome" placeholder="Digite seu nome completo"><br><br>
+
+      <label type="email">E-mail</label><br>
+      <input type="email" id="email" name="email" class="input-nome" placeholder="Digite seu e-mail"><br><br>
+      <label type="senha">Senha</label><br>
+      <input type="password" id="senha" name="senha" class="input-nome" placeholder="Crie uma senha"><br><br>
+       <label type="confirmar-senha">Confirmar Senha</label><br>
+      <input type="password" id="confirmar-senha" name="confirmar_senha" class="input-nome" placeholder="Repita a senha"><br><br>
+
+      <label type="telefone">Telefone</label><br>
+      <input type="tel" id="telefone" name="telefone" class="input-nome" placeholder="(xx) xxxxx-xxxx"><br><br>
+
+
+      <label type="data-nascimento">Data de Nascimento</label><br>
+      <input type="date" id="data-nascimento" name="data_nascimento" class="input-nome"><br><br>
+
+
+      <label type="sexo">Sexo</label><br>
+      <select id="sexo" name="sexo" class="input-nome">
+        <option value="">Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+        <option value="nao informar">Prefiro não informar</option>
+      </select><br><br>
       
-      <label>Nome Completo</label><br>
-      <input type="text" class="input-nome" placeholder="Digite seu nome completo"><br><br>
-      <label>E-mail</label><br>
-      <input type="email" class="input-nome" placeholder="Digite seu e-mail"><br><br>
-      <label>Senha</label><br>
-      <input type="password" class="input-nome" placeholder="Crie uma senha"><br><br>
-      <label>Confirmar Senha</label><br>
-      <input type="password" class="input-nome" placeholder="Repita a senha"><br><br>
-      <label>Telefone</label><br>
-      <input type="tel" class="input-nome" placeholder="(xx) xxxxx-xxxx"><br><br>
-      
-    <a href="../exe06.formularios/produto.html" class="botao">Cadastrar Produto</a>
-    
+      <label type="logradouro">Logradouro</label><br>
+      <input type="text" id="logradouro" name="logradouro" class="input-nome" placeholder="Rua, Avenida..."><br><br>
+      <label type="bairro">Bairro</label><br>
+      <input type="text" id="bairro" name="bairro" class="input-nome" placeholder="Digite seu bairro"><br><br>
+      <label type="cidade">Cidade</label><br>
+      <input type="text" id="cidade" name="cidade" class="input-nome" placeholder="Digite sua cidade"><br><br>
+
+ 
+      <label type="estado">Estado</label><br>
+      <select id="estado" name="estado" class="input-nome">
+        <option value="">Selecione seu estado</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MS">Sao paulo</option>
+
+      </select><br><br>
+
+      <button type="submit" class="botao">Cadastrar</button><br><br>
+
+
+      <a href="../exe06.formularios/produto.html" class="botao">Cadastrar Produto</a>
+      <a href="../exe06.formularios/exe06_formularios.html" class="botao">Cancelar</a>
+
     </form>
   </div>
 

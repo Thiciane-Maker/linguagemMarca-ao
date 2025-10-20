@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ifood - Delivery de comida</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <div class="container">
+      <img src="https://logopng.com.br/logos/ifood-43.png" alt="Logo iFood" class="logo">
+
+      <!-- Menu de navegação -->
+      <div class="navegacao">
+        <a href="#" class="item">Restaurante</a>
+        <a href="#" class="item">Mercado</a>
+        <a href="#" class="item">Bebidas</a>
+        <a href="#" class="item">Farmácia</a>
+        <a href="#" class="item">Pet-shop</a>
+      </div>
+
+      <div class="busca-local">
+        <input type="text" placeholder="Busque por item na loja" class="buscar">
+        <div class="localizacao">
+          <span>📍</span>
+          <input type="text" value="Andradina, SP" class="texto-local">
+        </div>
+      </div>
+
+      <div class="acao">
+        <a href="#modal-cadastro" class="criar-conta">Criar conta</a>
+        <button class="botao-entrar">Entrar</button>
+      </div>
+    </div>
+
+    <!-- molda criar conta -->
+     <div id="modal-cadastro" class="modal-container">
+      <div class="modal-box">
+        <div class="modal-cabecalho">
+
+        </div>
+        <!-- CABECALHO -->
+        <h2>Criar Conta</h2>
+        <a href="" class="fechar">&times;</a> 
+        
+        <form action="" class="formulario">
+          <!-- corpo -->
+           <div class="grupo-form">
+            <label for="Nome completo">Nome completo</label>
+            <input id="Nomme completo" type="text" placeholder="Digite seu nome completo" required>
+           </div>
+      <div>
+
+         <div class="grupo-form">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Thiciane.ladeia@gmail.com" required>
+           </div>
+      <div>
+
+        <div class="grupo-form">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" placeholder="Crie uma senha forte" required>
+           </div>
+           <button type="submit" class="botao-criar">Criar Conta</button>
+        </form>
+      <div>
+        <!-- rodape-->
+         <p>Ja tem conta? <a href="">Entrar</a></p>
+      </div>
+      </div>
+
+     </div>
+ 
+ 
+  </header>
+
+  <!-- Seção de categorias -->
+  <section class="r1">
+    <div class="lojas">
+      <img src="https://i.pinimg.com/736x/aa/8b/1e/aa8b1eb3967b609aebf7773400b203c1.jpg" class="img-lojas" alt="Mercado">
+      <p>Mercado</p>
+    </div>
+
+    <div class="lojas">
+      <img src="https://i.pinimg.com/736x/7e/e8/2b/7ee82b761dd674e6fb6f01a0611ef7cc.jpg" class="img-lojas" alt="Almoço">
+      <p>Almoço</p>
+    </div>
+
+    <div class="lojas">
+      <img src="https://i.pinimg.com/736x/83/1c/fb/831cfb9eb73e28a11be87b6c29b71f70.jpg" class="img-lojas" alt="Bebidas">
+      <p>Bebidas</p>
+    </div>
+
+    <div class="lojas">
+      <img src="https://i.pinimg.com/1200x/1c/27/68/1c2768dc139a564ada99a7305f8d2138.jpg" class="img-lojas" alt="Promoção">
+      <p>Promoção</p>
+    </div>
+
+    <div class="lojas">
+      <img src="https://i.pinimg.com/736x/93/12/d8/9312d8a9d471fe98f2b6674b7a74d0f3.jpg" class="img-lojas" alt="Pizza">
+      <p>Pizza</p>
+    </div>
+  </section>
+
+  <!-- Seção Restaurantes Famosos -->
+  <section class="container-famosos">
+    <div class="famosos">
+      <h2>Restaurantes famosos</h2>
+      <a href="#">Ver mais</a>
+    </div>
+
+    <div class="secao-cards-famosos">
+      <div class="card-loja">
+        <img src="https://i.pinimg.com/1200x/c5/bb/e0/c5bbe04c6bcc78c40fcc85f3c34ed6e6.jpg" alt="Restaurante 1">
+      </div>
+      <div class="card-loja">
+        <img src="https://i.pinimg.com/1200x/50/ce/e2/50cee2b542406bcd619ba44cf1bd2270.jpg" alt="Restaurante 2">
+      </div>
+    </div>
+  </section>
+<section class="promocoes">
+  <h2 class="titulo-promocoes">Nossas Melhores Promoções</h2>
+
+  <div class="carrosel-container">
+    <div class="carrosel-trilho">
+
+      <div class="cartao-promocao">
+        <img src="https://i.pinimg.com/1200x/f7/c3/8b/f7c38b3b68cdb62a012f9a277f225a99.jpg" alt="Promoção de esfirra">
+        <div class="info-promocao">
+          <h3>Esfirra de queijo</h3>
+          <p class="nome-loja">Dominique</p>
+          <p class="preco">R$ 12,00</p>
+        </div>
+      </div>
+
+      <div class="cartao-promocao">
+        <img src="https://i.pinimg.com/736x/d2/e3/99/d2e3995628340b44df751dff6560756a.jpg" alt="Promoção de lanche">
+        <div class="info-promocao">
+          <h3>X-Salada</h3>
+          <p class="nome-loja">Safira</p>
+          <p class="preco">R$ 34,00</p>
+        </div>
+      </div>
+
+      <div class="cartao-promocao">
+        <img src="https://i.pinimg.com/1200x/b6/b6/f5/b6b6f58313ed736a56be6665ca9da91a.jpg" alt="Promoção de lanche">
+        <div class="info-promocao">
+          <h3>X-Bacon</h3>
+          <p class="nome-loja">Burger House</p>
+          <p class="preco">R$ 36,00</p>
+        </div>
+      </div>
+</section>
+
+
+</section>
+
+
+
+  <!-- Rodapé -->
+  <footer class="rodape-principal">
+    <div class="rodape-container">
+      <div class="coluna-rodape">
+        <h3>Ifood</h3>
+        <ul>
+          <li><a href="#">Cadastre seu Restaurante</a></li>
+          <li><a href="#">Fale conosco</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Ifood Shop</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna-rodape">
+        <h3>Descubra</h3>
+        <ul>
+          <li><a href="#">Ifood para Entregadores</a></li>
+          <li><a href="#">Blog Shop</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna-rodape">
+        <h3>Social</h3>
+        <div class="icones-sociais">
+          <a href="#">FB</a>
+          <a href="#">TW</a>
+          <a href="#">IG</a>
+          <a href="#">YT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

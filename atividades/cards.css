@@ -1,0 +1,72 @@
+.card{
+    width: 900px;
+    height: 500px;
+    border: 1px solid rgb(109, 146, 158);
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(112, 141, 173, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease;
+    flex: 0 0 auto; 
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+
+}
+
+.card-imagem{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-imagem >img{
+    max-width: 150%;
+    width: 100px;
+}
+
+.card-imagem > figcaption{
+    font-size: 0.8rem;
+    padding: 8px;
+    text-align: center;
+    color: black;
+
+}
+.card-cabecalho{
+    padding: 10px;
+    }
+
+
+    .card-rodape{
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 6px;
+    }
+
+    .card-botao{
+       /* remove a decoraçao da tag a */
+        text-decoration: none;
+        color: rgb(73, 73, 73);
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+        padding: 5px 6px;
+
+
+    }
+
+    .card-botao:hover{
+        background-color: burlywood;
+        width: 150px;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap:0.9rem;
+        height: 500px;
+        margin-left: 5px;
+        overflow: auto;
+    }
+

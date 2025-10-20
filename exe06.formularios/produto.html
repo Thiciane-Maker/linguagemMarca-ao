@@ -4,21 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastrar Produto</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
   <div class="produto">
     <h4>Cadastrar Produto</h4>
     
-    <form action="#" value="postar">
+    <form value="" value="post">
       
-      <label>Nome do Produto</label><br>
-      <input type="text" class="input-nome" placeholder="Digite o nome do produto"><br><br>
-      <label>Descriçao do Produto</label><br>
-      <input type="text" class="input-nome" placeholder="Digite a descriçao do produto"><br><br>
-      <input type="submit" class="botao" value="Cadastrar Produto">
-    
+      <label type="modelo">Modelo</label><br>
+      <input type="text" id="modelo" name="modelo" placeholder="Digite o modelo do produto"><br><br>
+
+      <label type="marca">Marca</label><br>
+      <input type="text" id="marca" name="marca" placeholder="Digite a marca"><br><br>
+
+      <label type="processador">Processador</label><br>
+      <input type="text" id="processador" name="processador" placeholder="Ex: Intel a5"><br><br>
+
+      <label type="memoria">Memória RAM</label><br>
+      <input type="text" id="memoria" name="memoria" placeholder="Ex: 8GB, 16GB"><br><br>
+
+      <label type="armazenamento">Armazenamento</label><br>
+      <input type="text" id="armazenamento" name="armazenamento" placeholder="Ex: 256GB SSD, 1TB HDD"><br><br>
+
+      <label type="tela">Tela</label><br>
+      <input type="text" id="tela" name="tela" placeholder="Ex: 15.6 Full HD"><br><br>
+
+      <label type="sistema">Sistema Operacional</label><br>
+      <input type="text" id="sistema" name="sistema" placeholder="Ex: Windows, Linux"><br><br>
+
+      <label type="preco">Preço (R$)</label><br>
+      <input type="number" id="preco" name="preco" placeholder="Digite o preço"><br><br>
+
+      <label type="descricao">Descrição do Produto</label><br>
+      <textarea id="descricao" name="descricao" placeholder="Digite a descrição do produto"></textarea><br><br>
+
+       <a href="../exe06.formularios/exe06_formularios.html" class="botao">Cadastrar Produto</a>
+
     </form>
   </div>
 
